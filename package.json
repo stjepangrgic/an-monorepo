@@ -1,0 +1,4 @@
+{
+  "private": true,
+  "workspaces": ["app", "website", "orchestra-design-system"]
+}
