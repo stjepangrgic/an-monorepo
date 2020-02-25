@@ -1,0 +1,8 @@
+{
+  "name": "orchestra-design-system",
+  "version": "1.0.0",
+
+  "dev-dependencies": {
+    "cross-env": "^7.0.0"
+  }
+}
