@@ -1,7 +1,6 @@
 {
   "name": "app",
   "version": "1.0.0",
-
   "devDependencies": {
     "cross-env": "^7.0.0"
   }
