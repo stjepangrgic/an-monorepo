@@ -3,7 +3,8 @@ import 'normalize.css/normalize.css' // Adding this line adds the normalize to t
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${props => props.theme.color.globayBackground};
+    background-color: ${(props) => props.theme.color.globayBackground};
+    font-family: sans-serif
   }
 `
 
