@@ -7,4 +7,4 @@ export default {
   component: Button,
 }
 
-export const Text = () => <Button>Test Button</Button>
+export const Default = () => <Button>Test Button</Button>
