@@ -1,29 +1,11 @@
-// import styled from 'styled-components'
+import React from 'react'
+// import { action } from '@storybook/addon-actions'
+import Title from './Title'
 
-// // const buttonBackground = (props) => console.log(props)
+export default {
+  title: 'Title',
+  component: Title,
+}
 
-// // if (${({ h }) => (h === '1' ? '48px' : null)})
-// // switch (props.h) {
-// //   case '1':
-// //     // colour = props.theme.primary
-// //     break
-// //   case '2':
-// //     // colour = props.theme.secondary
-// //     break
-// //   case '3':
-// //     // colour = props.theme.tertiary
-// //     break
-// //   case '4':
-// //     // colour = props.theme.tertiary
-// //     break
-// //   case '5':
-// //     // colour = props.theme.tertiary
-// //     break
-// //   case '6':
-// //     // colour = props.theme.tertiary
-// //     break
-// // }
-
-// const StyledTitle = styled.h1``
-
-// export default StyledTitle
+export const Default = () => <Title>Heading 1</Title>
+export const TitleAs = () => <Title as="h2">Heading 1</Title>

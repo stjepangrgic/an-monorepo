@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
-// const buttonBackground = (props) => console.log(props)
+// const buttonBackground = (props) => console.log(props.theme.mellowYellow)
 
 // if (${({ h }) => (h === '1' ? '48px' : null)})
 // switch (props.h) {
@@ -24,6 +24,8 @@ import styled from 'styled-components'
 //     break
 // }
 
-const StyledTitle = styled.h1``
+const StyledTitle = styled.h1`
+  color: ${({ theme }) => `${theme.color.black}`};
+`
 
 export default StyledTitle
