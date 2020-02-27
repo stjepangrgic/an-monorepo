@@ -1,12 +1,12 @@
 import React from 'react'
 // import { action } from '@storybook/addon-actions'
 import Button from './Button'
-import { withA11y } from '@storybook/addon-a11y'
+// import { withA11y } from '@storybook/addon-a11y'
 
 export default {
   title: 'Button',
   component: Button,
-  decorators: [withA11y],
+  // decorators: [withA11y],
 }
 
 export const Default = () => <Button>Test Button</Button>
