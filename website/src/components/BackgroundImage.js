@@ -12,20 +12,7 @@ import React from 'react';
 // import { graphql, useStaticQuery } from 'gatsby';
 import GatsbyBackgroundImage from 'gatsby-background-image';
 
-const BackgroundImage = ({tag, image, children, fadeIn, ...props }) => {
-
-  // export const query = graphql`
-  //   query($slug: String!) {
-  //     mdx(frontmatter: { slug: { eq: $slug } }) {
-  //       frontmatter {
-  //         title
-  //         author
-  //       }
-  //       body
-  //     }
-  //   }
-  // `
-
+const BackgroundImage = ({ tag, image, children, fadeIn, ...props }) => {
   return (
     <GatsbyBackgroundImage Tag={tag} fluid={image} fadeIn={fadeIn} {...props}>
       {children}

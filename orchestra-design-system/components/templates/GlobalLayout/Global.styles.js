@@ -10,13 +10,13 @@ const GlobalStyle = css`
 
   html {}
   body {
-    background-color: #cac; 
+    background-color: #fff; 
     ${'' /* Try to move this to global, atm it was hard to reference the theme, 
     Looks like theme provider is not visible here */}
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     font-size: 0.875rem;
     > div {
-      background-color: #ccc;
+      ${'' /* background-color: #ccc; */}
     }
   }
 `

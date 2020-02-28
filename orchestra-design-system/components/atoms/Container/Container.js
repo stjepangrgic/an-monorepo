@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 
 const StyledContainer = styled.section`
-  background-color: #eee;
+  /* background-color: #eee; */
   /* max-width: */
   width: 90vw;
   max-width: 1170px;
