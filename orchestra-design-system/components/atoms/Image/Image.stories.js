@@ -1,9 +1,12 @@
 import React from 'react'
 import Image from './Image'
 
+import { withA11y } from '@storybook/addon-a11y'
+
 export default {
   title: 'Image',
   component: Image,
+  decorators: [withA11y],
 }
 
 export const TestImage = () => (
