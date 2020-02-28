@@ -1,15 +1,17 @@
 import React from 'react'
 // import StyledNavbar from './Image.styles'
 import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 
 import { Link, Logo, Button } from '../../atoms'
 
 const StyledNavbar = styled.nav`
   background-color: white;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   align-items: center;
-  .links, .actions {
+  .links,
+  .actions {
     > * {
       margin-left: 1rem;
     }
@@ -22,20 +24,30 @@ const StyledNavbar = styled.nav`
 const Navbar = () => {
   return (
     <StyledNavbar>
-      <Link href="#!">
+      <Link
+        href="#!"
+        css={css`
+          &:hover {
+            background: transparent;
+          }
+        `}
+      >
         <Logo size="small" />
       </Link>
       <div className="links">
-        <Link href="#!" leftIcon='🔍'>Search music</Link>
+        <Link href="#!" leftIcon="🔍">
+          Search music
+        </Link>
         <Link href="#!">Discover</Link>
-        <Link href="#!" rightIcon="▼">Search music </Link>
+        <Link href="#!" rightIcon="▼">
+          Search music{' '}
+        </Link>
       </div>
 
       <div className="actions">
         <Link href="#!">Login</Link>
-        <Button >Register</Button>
+        <Button>Register</Button>
       </div>
-
     </StyledNavbar>
   )
 }

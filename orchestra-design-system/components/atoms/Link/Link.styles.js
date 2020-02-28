@@ -12,7 +12,7 @@ const StyledLink = styled.a`
     props.variant === 'primary'
       ? `${props.theme.color.mellowYellow}`
       : 'transparent'}; */
-  padding: 0.5em;
+  padding: 0.875em 1em;
   line-height:1;
   /* display: flex; */
   display: inline-block;

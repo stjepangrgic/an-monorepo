@@ -11,46 +11,46 @@ const buttonBackground = (props) => {
   // if (!props.variant) return props.theme.primary;
 
   // Dynamically determine the background colour based on props
-  let size;
+  let size
   switch (props.h) {
     case '1':
       // colour = props.theme.primary
-      size = '64px';
-      break;
+      size = '64px'
+      break
     case '2':
       // colour = props.theme.secondary
-      size = '48px';
-      break;
+      size = '48px'
+      break
     case '3':
       // colour = props.theme.tertiary
-      size = '32px';
-      break;
+      size = '32px'
+      break
     case '4':
       // colour = props.theme.tertiary
-      size = '24px';
-      break;
+      size = '24px'
+      break
     case '5':
       // colour = props.theme.tertiary
-      size = '16px';
-      break;
+      size = '16px'
+      break
     default:
       // colour = props.theme.tertiary
-      size = '16px';
-      break;
+      size = '16px'
+      break
   }
 
-  return size;
-};
+  return size
+}
 
 const StyledTitle = styled.h1`
   color: ${({ theme }) => `${theme.color.black}`};
-  font-size: ${props => buttonBackground(props)};
-  margin:0;
+  font-size: ${(props) => buttonBackground(props)};
+  margin: 0;
   padding-bottom: 1rem;
   padding-top: 1rem;
   font-weight: bold;
   text-transform: ${({ h }) => (h !== '6' ? 'uppercase' : null)};
-  
+  letter-spacing: 0.05em;
 `
 
 export default StyledTitle
