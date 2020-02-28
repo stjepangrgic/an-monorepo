@@ -3,12 +3,6 @@ import React from 'react'
 import Title from './Title'
 import { withA11y } from '@storybook/addon-a11y'
 
-export default {
-  title: 'Title',
-  component: Title,
-  decorators: [withA11y],
-}
-
 export const H1 = () => <Title h="1">Heading 1</Title>
 export const H2 = () => <Title h="2">Heading 2</Title>
 export const H3 = () => <Title h="3">Heading 3</Title>
@@ -20,3 +14,10 @@ export const H1asDiv = () => (
     Heading 1
   </Title>
 )
+
+export default {
+  title: 'Title',
+  component: Title,
+  decorators: [withA11y],
+  title: 'Atoms|Title',
+}

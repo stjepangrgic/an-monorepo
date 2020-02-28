@@ -3,11 +3,7 @@ import React from 'react'
 import Link from './Link'
 import { withA11y } from '@storybook/addon-a11y'
 
-export default {
-  title: 'Link',
-  component: Link,
-  decorators: [withA11y],
-}
+import { Button } from '../../atoms'
 
 export const Default = () => <Link href="javascript:void()">Default Link</Link>
 export const LeftIcon = () => (
@@ -16,13 +12,22 @@ export const LeftIcon = () => (
   </Link>
 )
 export const RightIcon = () => (
-  <Link rightIcon="💩" href="javascript:void()">
+  <Link rightIcon=" 💩" href="javascript:void()">
     Right Icon
   </Link>
 )
 
-export const LooksLikeButtonSecondary = () => (
-  <Link href="javascript:void()" variant="primary">
-    Looks like Button Primary
-  </Link>
-)
+// export const LinkLooksLikeAButton = () => (
+//   <Link href="javascript:void()" as={Button}>
+//     Looks like Button Primary
+//   </Link>
+// )
+
+export const LinkLooksLikeAButton = () => <Button as={Link}>Test Button</Button>
+
+export default {
+  title: 'Link',
+  component: Link,
+  decorators: [withA11y],
+  title: 'Atoms|Link',
+}
