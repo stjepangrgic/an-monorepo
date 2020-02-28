@@ -11,12 +11,12 @@ export default {
 
 export const Default = () => <Link href="javascript:void()">Default Link</Link>
 export const LeftIcon = () => (
-  <Link leftIcon="Icon" href="javascript:void()">
+  <Link leftIcon="💩" href="javascript:void()">
     Left Icon
   </Link>
 )
 export const RightIcon = () => (
-  <Link rightIcon="Icon" href="javascript:void()">
+  <Link rightIcon="💩" href="javascript:void()">
     Right Icon
   </Link>
 )

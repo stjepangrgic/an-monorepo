@@ -8,11 +8,18 @@ const StyledLink = styled.a`
   font-weight: bold;
   color: ${({ theme }) => `${theme.color.black}`};
   /* font-family: ${(props) => `${props.variant}`}; */
-  background-color: ${(props) =>
+  /* background-color: ${(props) =>
     props.variant === 'primary'
       ? `${props.theme.color.mellowYellow}`
-      : 'transparent'};
-
+      : 'transparent'}; */
+  padding: 0.5em;
+  line-height:1;
+  /* display: flex; */
+  display: inline-block;
+  border-radius: 2px;
+  &:hover {
+    background: #eee;
+  }
 
 
   /* TODO Figure out how to style different variants in the simplest way */

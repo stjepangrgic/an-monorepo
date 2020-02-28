@@ -8,7 +8,7 @@ import { ThemeProvider } from 'emotion-theming'
 import GlobalStyle from 'orchestra-design-system/components/particles/global-style'
 import theme from 'orchestra-design-system/components/particles/theme'
 
-console.log('theme: ', theme)
+// console.log('theme: ', theme)
 
 const GlobalLayout = ({ children }) => {
   // const { title, description, author } = useSiteMetadata();
@@ -23,6 +23,11 @@ const GlobalLayout = ({ children }) => {
         <meta name="description" content={description}/>
         <meta name="author" content={author}/>
       </Helmet> */}
+        {/* <Page page={page}>
+          <Navbar />
+          {children}
+          <Footer />
+        </Page> */}
         {children}
       </ThemeProvider>
     </>

@@ -4,9 +4,9 @@ import StyledLink from './Link.styles'
 const Link = ({ href, children, leftIcon, rightIcon, variant, ...props }) => {
   return (
     <StyledLink href={href} variant={variant} {...props}>
-      {leftIcon && <span className="left-icon">💩</span>}
+      {leftIcon && <span className="left-icon">{leftIcon}</span>}
       {children}
-      {rightIcon && <span className="left-icon"> 💩</span>}
+      {rightIcon && <span className="right-icon">{rightIcon}</span>}
     </StyledLink>
   )
 }

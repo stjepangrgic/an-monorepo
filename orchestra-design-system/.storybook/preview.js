@@ -1,16 +1,12 @@
 import React from 'react'
 import { addDecorator } from '@storybook/react'
-import { ThemeProvider } from 'emotion-theming'
-import { Global } from '@emotion/core'
 
-import GlobalStyle from '../components/particles/global-style'
-import theme from '../components/particles/theme'
+import GlobalLayout from '../components/templates/GlobalLayout'
 
 const GlobalWrapper = (storFn) => (
-  <ThemeProvider theme={theme}>
-    <Global styles={GlobalStyle} />
+  <GlobalLayout>
     {storFn()}
-  </ThemeProvider>
+  </GlobalLayout>
 )
 
 addDecorator(GlobalWrapper)
