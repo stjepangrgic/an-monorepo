@@ -26,10 +26,11 @@ const Navbar = () => {
     <Container>
       <StyledNavbar>
         <Link
-          href="#!"
+          href="/"
           css={css`
             /* background-color: red; */
             padding: 0;
+            margin-left: -1rem;
             &:hover {
               background: transparent;
               margin-left: -1rem;

@@ -37,7 +37,7 @@ const IndexPage = () => {
     {
       title: 'DIGITAL BRANDED CONTENT',
       text: 'For agencies, brands and production companies',
-      url: '/page-2',
+      url: '/mdx-page',
     },
   ]
 
