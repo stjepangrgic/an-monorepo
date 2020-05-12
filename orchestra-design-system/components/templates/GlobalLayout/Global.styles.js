@@ -8,9 +8,10 @@ const GlobalStyle = css`
     margin: 0;
   }
 
-  html {}
+  html {
+  }
   body {
-    background-color: #fff; 
+    background-color: #fff;
     ${'' /* Try to move this to global, atm it was hard to reference the theme, 
     Looks like theme provider is not visible here */}
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
